@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Отчет AERIS 2025–2026 — 47 кейсов</title>
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .report { padding: 48px 0 80px; }
+    .report h1 { font-family: var(--font-display); letter-spacing: -0.04em; font-size: clamp(2rem, 4vw, 3rem); }
+    .report-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+    .report-grid article, .panel { background: rgba(255,255,255,.5); border-radius: 22px; padding: 22px; }
+    .report-grid b { font-family: var(--font-display); font-size: 2rem; color: #3db98a; display: block; }
+    @media print {
+      .header, .no-print { display: none !important; }
+      body { background: #fff; }
+    }
+    @media (max-width: 800px) { .report-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="header is-scrolled no-print">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><img src="assets/logo-mark.png" alt=""> AERIS</a>
+      <button class="btn btn-primary" type="button" onclick="window.print()"><span>Скачать PDF</span></button>
+    </div>
+  </header>
+  <main class="wrap report">
+    <span class="badge">Внутренняя аналитика 2025–2026</span>
+    <h1>47 внедрений. Один язык — цифры.</h1>
+    <p class="lead">Сводка по проектам AERIS: ИИ-квалификация, связка контуров и снижение рутины. Данные агрегированы, клиенты обезличены.</p>
+    <div class="report-grid">
+      <article><b>x3.5</b><p>Медианный рост конверсии в заявку после ИИ-квалификации лидов.</p></article>
+      <article><b>−40%</b><p>Снижение операционных расходов на повторяющиеся операции.</p></article>
+      <article><b>14 дней</b><p>Средний срок окупаемости интеграций в выборке.</p></article>
+    </div>
+    <div class="panel">
+      <h2>Выборка</h2>
+      <p>47 завершенных проектов: производство, B2B-услуги, e-commerce, профессиональные сервисы. География — РФ и СНГ. Срок наблюдений — 2025–2026.</p>
+      <h2>Что считали</h2>
+      <p>Конверсия в заявку — до/после на одном канале. Рутина — часы, подтвержденные интервью с собственником и выгрузками из CRM. Окупаемость — экономия ФОТ + прирост валовой прибыли относительно стоимости внедрения.</p>
+      <h2>Ограничение</h2>
+      <p>Отчет не является гарантией результата. Эффект зависит от дисциплины команды, качества данных и готовности к Change Management.</p>
+    </div>
+    <p class="no-print"><a class="btn btn-ghost" href="index.html">Назад на лендинг</a></p>
+  </main>
+</body>
+</html>
